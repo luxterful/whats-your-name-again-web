@@ -1,0 +1,23 @@
+{
+  "name": "vue-frontend-boilderplate",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "concurrently 'npm:serve:frontend' 'npm:serve:backend'",
+    "serve:frontend": "npm run dev -w frontend",
+    "serve:backend": "npm run dev -w backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "prettier": "^2.8.4"
+  }
+}
